@@ -234,7 +234,7 @@ img { max-width: 100%; display: block; image-rendering: pixelated; }
   border: 2px solid var(--ink);
   margin-top: 6px;
 }
-.hp-bar__fill { height: 100%; width: 92%; background: var(--green); }
+.hp-bar__fill { height: 100%; width: 75%; background: var(--green); }
 
 /* ============================================
    SECTIONS

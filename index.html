@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seu Nome — Pixel Art & Game Design</title>
+<meta name="description" content="Portfólio de pixel art e design de jogos." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav">
+    <a href="#home" class="nav__mark" aria-label="Início">
+      <span class="pixel-heart" aria-hidden="true"></span>
+      <span class="nav__name">SEU NOME</span>
+    </a>
+    <nav class="nav__links">
+      <a href="#projects">Projetos</a>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Ferramentas</a>
+      <a href="#contact">Contato</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="home" class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">★ PIXEL ART &amp; GAME DESIGN</p>
+      <h1 class="hero__title">SEU<br>NOME</h1>
+      <div class="dialog-box">
+        <p class="hero__lede" id="typewriter"></p>
+      </div>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">▶ VER PROJETOS</a>
+        <a href="#contact" class="btn btn--ghost">FALAR COMIGO</a>
+      </div>
+    </div>
+    <aside class="statcard" aria-hidden="true">
+      <p class="statcard__title">STATUS</p>
+      <div class="statcard__row"><span>CLASSE</span><span>Pixel Artist</span></div>
+      <div class="statcard__row"><span>LOCAL</span><span>Brasil</span></div>
+      <div class="statcard__row"><span>DISPONÍVEL</span><span>SIM</span></div>
+      <div class="statcard__hp">
+        <span>HP</span>
+        <div class="hp-bar"><div class="hp-bar__fill"></div></div>
+      </div>
+    </aside>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="section__head">
+      <p class="eyebrow">★ TRABALHO SELECIONADO</p>
+      <h2>PROJETOS</h2>
+      <p class="section__sub">Substitua os cards abaixo pelas suas próprias artes/jogos — imagem, título, tags e link.</p>
+    </div>
+
+    <div class="grid grid--projects">
+      <article class="card">
+        <div class="card__media">
+          <img src="img/placeholder-01.png" alt="Nome do projeto 1" loading="lazy">
+          <span class="card__tag">#01</span>
+        </div>
+        <div class="card__body">
+          <h3>Nome do Projeto</h3>
+          <p>Breve descrição do jogo ou da arte em uma frase.</p>
+          <div class="card__tags"><span>Pixel Art</span><span>Sprite</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="img/placeholder-02.png" alt="Nome do projeto 2" loading="lazy">
+          <span class="card__tag">#02</span>
+        </div>
+        <div class="card__body">
+          <h3>Nome do Projeto</h3>
+          <p>Breve descrição do jogo ou da arte em uma frase.</p>
+          <div class="card__tags"><span>Game Design</span><span>UI</span></div>
+        </div>
+      </article>
+
+      <article class="card">
+        <div class="card__media">
+          <img src="img/placeholder-03.png" alt="Nome do projeto 3" loading="lazy">
+          <span class="card__tag">#03</span>
+        </div>
+        <div class="card__body">
+          <h3>Nome do Projeto</h3>
+          <p>Breve descrição do jogo ou da arte em uma frase.</p>
+          <div class="card__tags"><span>Animação</span><span>Tileset</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section section--about">
+    <div class="section__head">
+      <p class="eyebrow">★ TRAJETÓRIA</p>
+      <h2>SOBRE</h2>
+    </div>
+    <div class="dialog-box about__content">
+      <p class="about__lede">
+        Escreva aqui um parágrafo curto sobre quem você é, como começou a fazer
+        pixel art e o que te move em cada projeto.
+      </p>
+      <p>
+        Um segundo parágrafo pode falar sobre os jogos que você já fez,
+        suas especialidades (ex: sprites, tilesets, animação frame a frame)
+        e o tipo de projeto que mais gosta de criar.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section">
+    <div class="section__head">
+      <p class="eyebrow">★ INVENTÁRIO</p>
+      <h2>FERRAMENTAS</h2>
+    </div>
+    <ul class="tools">
+      <li><span class="tools__label">Aseprite</span></li>
+      <li><span class="tools__label">Photoshop</span></li>
+      <li><span class="tools__label">PICO-8</span></li>
+      <li><span class="tools__label">Godot</span></li>
+      <li><span class="tools__label">Unity</span></li>
+      <li><span class="tools__label">Tiled</span></li>
+    </ul>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section--contact">
+    <div class="section__head">
+      <p class="eyebrow">★ CONTINUAR?</p>
+      <h2>CONTATO</h2>
+      <p class="section__sub">Disponível para projetos freelance e oportunidades.</p>
+    </div>
+    <a href="mailto:seuemail@gmail.com" class="contact__email">seuemail@gmail.com</a>
+    <div class="contact__links">
+      <a href="https://www.linkedin.com/in/seu-usuario/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://itch.io/profile/seu-usuario" target="_blank" rel="noopener">itch.io</a>
+      <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="pixel-heart pixel-heart--sm" aria-hidden="true"></span>
+    <p>© <span id="year"></span> SEU NOME — TODOS OS DIREITOS RESERVADOS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Seu Nome — Pixel Art & Game Design</title>
+<meta name="description" content="Portfólio de pixel art e design de jogos." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <div class="scanlines" aria-hidden="true"></div>
+
+  <!-- ===== CONSOLE SHELL / NAV ===== -->
+  <header class="shell">
+    <div class="shell__top">
+      <span class="shell__power"><span class="shell__led"></span> POWER</span>
+      <span class="shell__brand">◼ PORTFOLIO™</span>
+    </div>
+    <nav class="shell__links">
+      <a href="#home">Início</a>
+      <a href="#projects">Projetos</a>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Ferramentas</a>
+      <a href="#contact">Contato</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="screen">
+
+    <!-- ===== HERO ===== -->
+    <section id="home" class="hero">
+      <p class="label">◼ NEW GAME</p>
+      <h1 class="hero__title">SEU NOME</h1>
+      <p class="hero__lede">
+        Pixel art e design de jogos — sprites, tilesets e interfaces
+        pensados quadro a quadro.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--a">A · PROJETOS</a>
+        <a href="#contact" class="btn btn--b">B · CONTATO</a>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <p class="label">◼ SELECT STAGE</p>
+      <h2>Projetos</h2>
+      <p class="section__sub">Substitua os cards abaixo pelos seus próprios projetos.</p>
+
+      <div class="grid--projects">
+        <article class="card">
+          <div class="card__media">
+            <img src="img/placeholder-01.png" alt="Nome do projeto 1" loading="lazy">
+          </div>
+          <div class="card__body">
+            <p class="card__num">STAGE 1-1</p>
+            <h3>Nome do Projeto</h3>
+            <p>Breve descrição do jogo ou da arte em uma frase.</p>
+            <div class="card__tags"><span>Pixel Art</span><span>Sprite</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/placeholder-02.png" alt="Nome do projeto 2" loading="lazy">
+          </div>
+          <div class="card__body">
+            <p class="card__num">STAGE 1-2</p>
+            <h3>Nome do Projeto</h3>
+            <p>Breve descrição do jogo ou da arte em uma frase.</p>
+            <div class="card__tags"><span>Game Design</span><span>UI</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__media">
+            <img src="img/placeholder-03.png" alt="Nome do projeto 3" loading="lazy">
+          </div>
+          <div class="card__body">
+            <p class="card__num">STAGE 1-3</p>
+            <h3>Nome do Projeto</h3>
+            <p>Breve descrição do jogo ou da arte em uma frase.</p>
+            <div class="card__tags"><span>Animação</span><span>Tileset</span></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <p class="label">◼ CHARACTER INFO</p>
+      <h2>Sobre</h2>
+      <div class="about__content">
+        <p class="about__lede">
+          Escreva aqui um parágrafo curto sobre quem você é, como começou
+          a fazer pixel art e o que te move em cada projeto.
+        </p>
+        <p>
+          Um segundo parágrafo pode falar sobre os jogos que você já fez,
+          suas especialidades e o tipo de projeto que mais gosta de criar.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <p class="label">◼ ITEM BAG</p>
+      <h2>Ferramentas</h2>
+      <ul class="tools">
+        <li>Aseprite</li>
+        <li>Photoshop</li>
+        <li>PICO-8</li>
+        <li>Godot</li>
+        <li>Unity</li>
+        <li>Tiled</li>
+      </ul>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section section--contact">
+      <p class="label">◼ CONTINUE?</p>
+      <h2>Contato</h2>
+      <p class="section__sub">Disponível para projetos freelance e oportunidades.</p>
+      <a href="mailto:seuemail@gmail.com" class="contact__email">seuemail@gmail.com</a>
+      <div class="contact__links">
+        <a href="https://www.linkedin.com/in/seu-usuario/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://itch.io/profile/seu-usuario" target="_blank" rel="noopener">itch.io</a>
+        <a href="https://github.com/seu-usuario" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== D-PAD (decorativo + navegação funcional) ===== -->
+  <div class="dpad" aria-hidden="true">
+    <button class="dpad__btn dpad__up" data-dir="up">▲</button>
+    <button class="dpad__btn dpad__down" data-dir="down">▼</button>
+    <div class="dpad__ab">
+      <span class="dpad__round">A</span>
+      <span class="dpad__round dpad__round--b">B</span>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> SEU NOME — TODOS OS DIREITOS RESERVADOS</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

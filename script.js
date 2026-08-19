@@ -22,6 +22,21 @@ const observer = new IntersectionObserver((entries) => {
       entry.target.classList.add('is-visible');
       observer.unobserve(entry.target);
     }
+    
+    // Galeria com lightbox (clique pra ampliar)
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+
+document.querySelectorAll('.gallery-grid img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add('is-open');
+  });
+});
+
+lightbox.addEventListener('click', () => {
+  lightbox.classList.remove('is-open');
+});
   });
 }, { threshold: 0.15 });
 

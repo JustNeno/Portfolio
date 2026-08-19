@@ -413,3 +413,29 @@ img { max-width: 100%; display: block; image-rendering: pixelated; }
   border-radius: 8px;
   box-shadow: 0 0 40px rgba(120, 180, 255, 0.3);
 }
+
+/* ============================================
+   FOTO DE PERFIL NO HERO
+   ============================================ */
+.hero__top {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin-bottom: 8px;
+}
+
+.hero__photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--nebula);
+  box-shadow: 0 0 20px rgba(120, 180, 255, 0.35);
+  flex-shrink: 0;
+  image-rendering: auto; /* remove o efeito pixelado só nessa foto */
+}
+
+@media (max-width: 480px) {
+  .hero__top { gap: 18px; }
+  .hero__photo { width: 72px; height: 72px; }
+}

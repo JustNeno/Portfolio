@@ -485,3 +485,12 @@ img { max-width: 100%; display: block; image-rendering: pixelated; }
   .hero__top { gap: 18px; }
   .hero__photo { width: 72px; height: 72px; }
 }
+
+.footer-text {
+    text-align: center;      /* Centraliza o texto */
+    padding: 2rem 0;         /* Espaçamento interno (topo e base) */
+    color: var(--text-muted); /* Usa a mesma cor cinza dos outros textos */
+    font-size: 0.9rem;       /* Tamanho de fonte um pouco menor */
+    border-top: 1px solid var(--border-color); /* Uma linha fina acima, se quiser separar */
+    margin-top: 2rem;        /* Espaço acima do texto */
+}

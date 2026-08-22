@@ -213,7 +213,7 @@ img { max-width: 100%; display: block; image-rendering: pixelated; }
 }
 
 .card__media img {
-  width: 45%;
+  width: 65%;
   animation: flutuar 3.5s ease-in-out infinite;
 }
 

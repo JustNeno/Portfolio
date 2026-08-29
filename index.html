@@ -19,29 +19,34 @@
       JustNeno
     </a>
     <nav class="nav__links">
-      <a href="#projects">Projetos</a>
-      <a href="#about">Sobre</a>
-      <a href="#links">Links</a>
+      <a href="#projects" data-en="Projects">Projetos</a>
+      <a href="#about" data-en="About">Sobre</a>
+      <a href="#gallery" data-en="Gallery">Galeria</a>
+      <a href="#links" data-en="Links">Links</a>
     </nav>
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" class="is-active">PT</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
     <button class="nav__toggle" id="navToggle" aria-label="Abrir menu">
       <span></span><span></span><span></span>
     </button>
   </header>
 
   <!-- ===== HERO ===== -->
-<section id="home" class="hero">
+  <section id="home" class="hero">
     <div class="hero__top">
       <img src="imgs/Minha_Foto_Para_Github.png" alt="Foto de Ruan Narvaes (JustNeno)" class="hero__photo">
       <div>
-        <p class="eyebrow">Meu nome é Ruan Narvaes, mas me conhecem como</p>
+        <p class="eyebrow" data-en="My name is Ruan Narvaes, but people know me as">Meu nome é Ruan Narvaes, mas me conhecem como</p>
         <h1 class="hero__title">JustNeno</h1>
       </div>
     </div>
-    <p class="hero__lede">
+    <p class="hero__lede" data-en="I make games and pixel art. I have plant/nature asset packs, and I build games solo in GameMaker and with friends in Unity.">
       Eu faço jogos e pixel art. Tenho assets de plantas/natureza, crio jogos sozinho no GameMaker e junto de amigos na Unity.
     </p>
     <div class="hero__quicklinks">
-      <a href="mailto:ruannrvs10@gmail.com" class="chip">E-mail</a>
+      <a href="mailto:ruannrvs10@gmail.com" class="chip" data-en="Email">E-mail</a>
       <a href="https://www.linkedin.com/in/ruan-narvaes/" target="_blank" rel="noopener" class="chip">LinkedIn</a>
       <a href="https://justneno.itch.io" target="_blank" rel="noopener" class="chip">itch.io</a>
       <a href="https://github.com/justneno" target="_blank" rel="noopener" class="chip">GitHub</a>
@@ -51,9 +56,9 @@
   <!-- ===== PROJECTS ===== -->
   <section id="projects" class="section">
     <div class="section__head">
-      <p class="eyebrow">Alguns Jogos:</p>
-      <h2>Projetos</h2>
-      <p class="section__sub">Jogos que já lancei — clique pra jogar ou ver na itch.io. (Nem todos estão aqui)</p>
+      <p class="eyebrow" data-en="Some games:">Alguns Jogos:</p>
+      <h2 data-en="Projects">Projetos</h2>
+      <p class="section__sub" data-en="Games I've already released — click to play or see it on itch.io. (Not everything is listed here)">Jogos que já lancei — clique pra jogar ou ver na itch.io. (Nem todos estão aqui)</p>
     </div>
 
     <div class="grid--projects">
@@ -61,10 +66,10 @@
       <article class="card card--featured">
         <div class="card__media"><img src="imgs/FlowerShowcase_itch.gif" alt=""></div>
         <div class="card__body">
-          <span class="card__tag">Pacote de Assets</span>
+          <span class="card__tag" data-en="Asset Pack">Pacote de Assets</span>
           <h3>Flowers n' Plants</h3>
-          <p>Pacote de pixel art com flores, cogumelos, pedras e vegetação aquática para jogos 2D.</p>
-          <a href="https://justneno.itch.io/flowers-n-plants" target="_blank" rel="noopener" class="card__link">Ver na itch.io →</a>
+          <p data-en="Pixel art pack with flowers, mushrooms, rocks and aquatic vegetation for 2D games.">Pacote de pixel art com flores, cogumelos, pedras e vegetação aquática para jogos 2D.</p>
+          <a href="https://justneno.itch.io/flowers-n-plants" target="_blank" rel="noopener" class="card__link" data-en="See on itch.io →">Ver na itch.io →</a>
         </div>
       </article>
 
@@ -73,18 +78,18 @@
         <div class="card__body">
           <span class="card__tag">Platformer</span>
           <h3>Nano Aware</h3>
-          <p>Dentro do hardware, você é uma IA que precisa retirar humanos da internet — pacificamente.</p>
-          <a href="https://findout.itch.io/nano-aware" target="_blank" rel="noopener" class="card__link">Jogar →</a>
+          <p data-en="Inside the hardware, you're an AI who needs to remove humans from the internet — peacefully.">Dentro do hardware, você é uma IA que precisa retirar humanos da internet — pacificamente.</p>
+          <a href="https://findout.itch.io/nano-aware" target="_blank" rel="noopener" class="card__link" data-en="Play →">Jogar →</a>
         </div>
       </article>
 
       <article class="card">
         <div class="card__media"><img src="imgs/Arara.gif" alt=""></div>
         <div class="card__body">
-          <span class="card__tag">Aprendizado</span>
-          <h3>Jogo dos Pássaros</h3>
-          <p>Estilo Flappy Bird, feito durante as aulas do curso NoNeClass.</p>
-          <a href="https://justneno.itch.io/jogo-dos-pssaros" target="_blank" rel="noopener" class="card__link">Jogar →</a>
+          <span class="card__tag" data-en="Learning">Aprendizado</span>
+          <h3 data-en="Bird Game">Jogo dos Pássaros</h3>
+          <p data-en="Flappy Bird style, made during NoNeClass course lessons.">Estilo Flappy Bird, feito durante as aulas do curso NoNeClass.</p>
+          <a href="https://justneno.itch.io/jogo-dos-pssaros" target="_blank" rel="noopener" class="card__link" data-en="Play →">Jogar →</a>
         </div>
       </article>
 
@@ -93,8 +98,8 @@
         <div class="card__body">
           <span class="card__tag">Adventure</span>
           <h3>CrownFall</h3>
-          <p>Você é uma aranha que usa teleportes pra enfrentar reinos tirânicos e salvar sua espécie.</p>
-          <a href="https://findout.itch.io/crownfall" target="_blank" rel="noopener" class="card__link">Jogar →</a>
+          <p data-en="You're a spider who uses teleports to face tyrannical kingdoms and save your species.">Você é uma aranha que usa teleportes pra enfrentar reinos tirânicos e salvar sua espécie.</p>
+          <a href="https://findout.itch.io/crownfall" target="_blank" rel="noopener" class="card__link" data-en="Play →">Jogar →</a>
         </div>
       </article>
 
@@ -103,8 +108,8 @@
         <div class="card__body">
           <span class="card__tag">Pong</span>
           <h3>Pong</h3>
-          <p>Um Pong simples feito com as aulas do curso NoNeClass. Este é o primeiro projeto do curso.</p>
-          <a href="https://justneno.itch.io/pong" target="_blank" rel="noopener" class="card__link">Jogar →</a>
+          <p data-en="A simple Pong made during NoNeClass course lessons. This was the course's first project.">Um Pong simples feito com as aulas do curso NoNeClass. Este é o primeiro projeto do curso.</p>
+          <a href="https://justneno.itch.io/pong" target="_blank" rel="noopener" class="card__link" data-en="Play →">Jogar →</a>
         </div>
       </article>
 
@@ -113,80 +118,44 @@
         <div class="card__body">
           <span class="card__tag">Puzzle</span>
           <h3>Water Flow</h3>
-          <p>Uma mãe axolote enfrenta a correnteza pra reencontrar seus filhotes.</p>
-          <a href="https://findout.itch.io/water-flow" target="_blank" rel="noopener" class="card__link">Jogar →</a>
+          <p data-en="An axolotl mother fights the current to find her babies again.">Uma mãe axolote enfrenta a correnteza pra reencontrar seus filhotes.</p>
+          <a href="https://findout.itch.io/water-flow" target="_blank" rel="noopener" class="card__link" data-en="Play →">Jogar →</a>
         </div>
       </article>
     </div>
 
-    <a href="https://justneno.itch.io" target="_blank" rel="noopener" class="section__more">Ver todos os projetos na itch.io</a>
+    <a href="https://justneno.itch.io" target="_blank" rel="noopener" class="section__more" data-en="See all projects on itch.io">Ver todos os projetos na itch.io</a>
   </section>
 
   <!-- ===== ABOUT ===== -->
   <section id="about" class="section section--about">
     <div class="section__head">
-      <p class="eyebrow">Não me ache esquisito...</p>
-      <h2>Sobre mim:</h2>
+      <p class="eyebrow" data-en="Don't think I'm weird...">Não me ache esquisito...</p>
+      <h2 data-en="About me:">Sobre mim:</h2>
     </div>
     <div class="about__content">
-      <p class="about__lede">
-        Sou desenvolvedor e artista de pixel art. Gosto de criar mundos e jogos estranhos, mas tenho uma paixão extra por pixel art. 
+      <p class="about__lede" data-en="I'm a developer and pixel artist. I like creating strange worlds and games, but I have an extra passion for pixel art.">
+        Sou desenvolvedor e artista de pixel art. Gosto de criar mundos e jogos estranhos, mas tenho uma paixão extra por pixel art.
       </p>
-        <p>
-          Atualmente estudo na Universidade Anhembi Morumbi, faço jogos na Unity e gamemaker, mas tenho experiência com outras ferramentas de design como:
-       </p>
-      <p>
-         Adobe Photoshop, Illustrator, um pouco de After Effects, Premiere e muito conhecimento com Aseprite.
-     </p> <br>
-      <p>
+      <p data-en="I currently study at Universidade Anhembi Morumbi, make games in Unity and GameMaker, and also have experience with other design tools like:">
+        Atualmente estudo na Universidade Anhembi Morumbi, faço jogos na Unity e gamemaker, mas tenho experiência com outras ferramentas de design como:
+      </p>
+      <p data-en="Adobe Photoshop, Illustrator, a bit of After Effects, Premiere, and solid knowledge of Aseprite.">
+        Adobe Photoshop, Illustrator, um pouco de After Effects, Premiere e muito conhecimento com Aseprite.
+      </p>
+      <br>
+      <p data-en="I'm also interning at Fireboss, working on screens and other assets for the game Demonak, launching by the end of 2026!">
         Também estou estagiando na empresa Fireboss, fazendo telas e outros itens para o jogo Demonak, que será lançado no fim de 2026!
       </p>
     </div>
   </section>
 
-  <!-- ===== LINKS ===== -->
-  <section id="links" class="section section--links">
-    <div class="section__head">
-      <p class="eyebrow">Tenho tempo livre!</p>
-      <h2>Links</h2>
-      <p class="section__sub">Disponível para projetos freelance, game jams, collabs... bem, pra muitas coisas.</p>
-    </div>
-    <div class="linkgrid">
-      <a href="mailto:ruannrvs10@gmail.com" class="linkcard">
-        <span class="linkcard__label">E-mail</span>
-        <span class="linkcard__value">ruannrvs10@gmail.com</span>
-      </a>
-      <a href="https://www.linkedin.com/in/ruan-narvaes/" target="_blank" rel="noopener" class="linkcard">
-        <span class="linkcard__label">LinkedIn</span>
-        <span class="linkcard__value">/in/ruan-narvaes</span>
-      </a>
-      <a href="https://justneno.itch.io" target="_blank" rel="noopener" class="linkcard">
-        <span class="linkcard__label">itch.io</span>
-        <span class="linkcard__value">justneno.itch.io</span>
-      </a>
-      <a href="https://github.com/seu-usuario" target="_blank" rel="noopener" class="linkcard">
-        <span class="linkcard__label">GitHub</span>
-        <span class="linkcard__value">github.com/JustNeno</span>
-      </a>
-    </div>
-  </section>
-  <br>
-  
-  <div class="lightbox" id="lightbox">
-    <img src="imgs/sprite-star.gif" alt="" id="lightboxImg">
-
-  </div>
-  <footer class="footer">
-    <img src="imgs/sprite-star.gif" alt="" class="footer__icon">
-    <p>Para mais conteúdo, continue indo para baixo</p><br>
-  </footer>
-  
   <!-- ===== GALERIA ===== -->
   <section id="gallery" class="section">
     <div class="section__head">
-      <p class="eyebrow">Projetos diversos</p>
-      <h2>Galeria</h2>
-      <p class="section__sub">Algumas artes soltas — clique numa imagem pra ampliar.</p>
+      <p class="eyebrow" data-en="Various projects">Projetos diversos</p>
+      <h2 data-en="Gallery">Galeria</h2>
+      <p class="section__sub" data-en="A few loose pieces of art — click an image to zoom in.">Algumas artes soltas — clique numa imagem pra ampliar.</p>
     </div>
 
     <div class="gallery-grid">
@@ -194,7 +163,7 @@
       <img src="imgs/FnP_2.png" alt="" loading="lazy">
       <img src="imgs/FnP_3.png" alt="" loading="lazy">
       <img src="imgs/FnP_4.png" alt="" loading="lazy">
-      
+
       <img src="imgs/Demonak_1.png" alt="" loading="lazy">
       <img src="imgs/Demonak_2.png" alt="" loading="lazy">
       <img src="imgs/Demonak_3.png" alt="" loading="lazy">
@@ -204,12 +173,12 @@
       <img src="imgs/Reis_Walk.gif" alt="" loading="lazy">
       <img src="imgs/Reis_Hurt.gif" alt="" loading="lazy">
       <img src="imgs/Coroa_Lacraia.gif" alt="" loading="lazy">
-      
+
       <img src="imgs/Mine_1.png" alt="" loading="lazy">
       <img src="imgs/Mine_2.png" alt="" loading="lazy">
       <img src="imgs/Mine_3.png" alt="" loading="lazy">
       <img src="imgs/Mine_4.png" alt="" loading="lazy">
-      <img src="imgs/Mine_5.png" alt="" loading="lazy">   <!-- EXCLUI O 6° -->
+      <img src="imgs/Mine_5.png" alt="" loading="lazy">
       <img src="imgs/Mine_7.png" alt="" loading="lazy">
       <img src="imgs/Mine_8.png" alt="" loading="lazy">
       <img src="imgs/Mine_9.png" alt="" loading="lazy">
@@ -226,53 +195,62 @@
       <img src="imgs/Ella_2.gif" alt="" loading="lazy">
       <img src="imgs/Fundo 01.png" alt="" loading="lazy">
       <img src="imgs/Fundo 02.png" alt="" loading="lazy">
-      
-      <!-- adicione quantas linhas quiser, seguindo esse padrão -->
     </div>
   </section>
 
+  <!-- ===== LINKS ===== -->
+  <section id="links" class="section section--links">
+    <div class="section__head">
+      <p class="eyebrow" data-en="I've got free time!">Tenho tempo livre!</p>
+      <h2 data-en="Links">Links</h2>
+      <p class="section__sub" data-en="Available for freelance projects, game jams, collabs... well, for a lot of things.">Disponível para projetos freelance, game jams, collabs... bem, pra muitas coisas.</p>
+    </div>
+    <div class="linkgrid">
+      <a href="mailto:ruannrvs10@gmail.com" class="linkcard">
+        <span class="linkcard__label" data-en="Email">E-mail</span>
+        <span class="linkcard__value">ruannrvs10@gmail.com</span>
+      </a>
+      <a href="https://www.linkedin.com/in/ruan-narvaes/" target="_blank" rel="noopener" class="linkcard">
+        <span class="linkcard__label">LinkedIn</span>
+        <span class="linkcard__value">/in/ruan-narvaes</span>
+      </a>
+      <a href="https://justneno.itch.io" target="_blank" rel="noopener" class="linkcard">
+        <span class="linkcard__label">itch.io</span>
+        <span class="linkcard__value">justneno.itch.io</span>
+      </a>
+      <a href="https://github.com/justneno" target="_blank" rel="noopener" class="linkcard">
+        <span class="linkcard__label">GitHub</span>
+        <span class="linkcard__value">github.com/JustNeno</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== QUICKDOCK ===== -->
+  <div class="quickdock">
+    <a href="https://discord.com/users/449621620659585056" target="_blank" rel="noopener" title="Discord">
+      <img src="imgs/discord-logo.png" alt="Discord">
+    </a>
+    <a href="mailto:ruannrvs10@gmail.com" title="E-mail">
+      <img src="imgs/gmail-logo.png" alt="E-mail">
+    </a>
+    <a href="https://www.instagram.com/justnenokk/" target="_blank" rel="noopener" title="Instagram">
+      <img src="imgs/instagram-logo.png" alt="Instagram">
+    </a>
+    <a href="https://justneno.itch.io" target="_blank" rel="noopener" title="itch.io">
+      <img src="imgs/itch-logo.png" alt="itch.io">
+    </a>
+  </div>
+
   <!-- lightbox (fica escondido até você clicar numa imagem) -->
   <div class="lightbox" id="lightbox">
-    <img src="imgs/Minha_Foto_Para_Github.png" alt="" id="lightboxImg">
+    <img src="" alt="" id="lightboxImg">
   </div>
+
   <footer class="footer">
     <img src="imgs/sprite-star.gif" alt="" class="footer__icon">
-    <p><span id="year"></span> JustNeno — Ruan Narvaes</p><br>
+    <p><span id="year"></span> JustNeno — Ruan Narvaes</p>
   </footer>
 
-
-  
-<div class="quickdock">
-  <a href="https://discord.com/users/449621620659585056" target="_blank" rel="noopener" title="Discord">
-    <img src="imgs/discord-logo.png" alt="Discord">
-  </a>
-  <a href="mailto:ruannrvs10@gmail.com" title="E-mail">
-    <img src="imgs/gmail-logo.png" alt="E-mail">
-  </a>
-  <a href="https://www.instagram.com/justnenokk/" target="_blank" rel="noopener" title="Instagram">
-    <img src="imgs/instagram-logo.png" alt="Instagram">
-  </a>
-  <a href="https://justneno.itch.io" target="_blank" rel="noopener" title="itch.io">
-    <img src="imgs/itch-logo.png" alt="itch.io">
-  </a>
-</div>
-  
-  <!-- dock flutuante de acesso rápido
-  
-  <div class="quickdock">
-    <a href="https://discord.com/users/449621620659585056" target="_blank" rel="noopener" title="Discord">Discord</a>
-    <a href="mailto:ruannrvs10@gmail.com" title="E-mail">Email</a>
-    <a href="https://www.instagram.com/justnenokk/" target="_blank" rel="noopener" title="Instagram">Insta</a>
-    <a href="https://justneno.itch.io" target="_blank" rel="noopener" title="itch.io"> itch.io</a>
-  </div>
-  -->
-
-<div class="footer-text">
-    <p>Placeholder 1</p>
-    <p>Placeholder 2</p>
-    <p>Placeholder 3</p>
-</div>
-  
   <script src="script.js"></script>
 </body>
 </html>

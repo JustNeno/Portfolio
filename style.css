@@ -457,6 +457,13 @@ html {
 .section--resume { text-align: center; }
 .section--resume .section__head { margin-left: auto; margin-right: auto; }
 
+.resume-actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .resume-btn {
   display: inline-flex;
   align-items: center;
@@ -474,6 +481,19 @@ html {
   background: var(--star);
   box-shadow: 0 0 20px rgba(120, 180, 255, 0.4);
   transform: translateY(-2px);
+}
+
+.resume-btn--alt {
+  background: transparent;
+  color: var(--nebula);
+  border: 1px solid rgba(120, 180, 255, 0.4);
+}
+
+.resume-btn--alt:hover {
+  background: rgba(120, 180, 255, 0.1);
+  color: var(--star);
+  border-color: var(--nebula);
+  box-shadow: 0 0 20px rgba(120, 180, 255, 0.25);
 }
 
 /* ============================================

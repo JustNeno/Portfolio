@@ -306,7 +306,10 @@ html {
 .about__content { max-width: 62ch; }
 .about__lede { font-size: 1.3rem; color: var(--star); margin-bottom: 18px; }
 .about__content p:not(.about__lede) { color: var(--text-soft); font-size: 1.05rem; }
-
+.about__content strong {
+  font-weight: 700;
+  color: var(--accent, #de73e5); /* use a cor de destaque do seu tema */
+}
 /* ============================================
    GALERIA
    ============================================ */
